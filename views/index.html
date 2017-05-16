@@ -8,6 +8,11 @@
 
     <body id="index">
         <h1>WebEng Second Long Exam</h1>
+        {% if username %}
+        <h2>{{username}}</h2>
+        {% else %}
+        <h2>Anonymous</h2>
+        {% endif %}
 
         <form action="/submit" method="post">
             <label for="username">Username:</label>
